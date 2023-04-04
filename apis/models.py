@@ -1,7 +1,7 @@
 from django.db import models
 from jsonfield import JSONField
 
-# Create your models here.
+
 class Case(models.Model):
     class Meta: 
         ordering = ['-date_uploaded']

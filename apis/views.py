@@ -4,21 +4,13 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from django.core.files import File
 from django.core.files.base import ContentFile
-
-import csv
-import joblib
-import s3fs
-import boto3
-import json
-from io import StringIO, BytesIO
+from .models import Case
+import pickle
 import math
-import datetime
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 from sklearn.metrics import mean_absolute_error, mean_squared_error, mean_absolute_percentage_error
-import pickle
-from .models import Case
 
 
 @api_view(['GET', 'POST'])
