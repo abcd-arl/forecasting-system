@@ -54,7 +54,7 @@ export default function Footer() {
 	function handleOnLogout(e) {
 		axios
 			.post(
-				'http://127.0.0.1:8000/api/dj-rest-auth/logout/',
+				process.env.REACT_APP_SERVER_URL + '/api/dj-rest-auth/logout/',
 				{},
 				{
 					headers: {

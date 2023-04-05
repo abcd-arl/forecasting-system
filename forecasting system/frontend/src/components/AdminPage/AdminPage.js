@@ -190,7 +190,7 @@ export default function Admin() {
 	);
 
 	async function getForecastData() {
-		const response = await axios.get('http://127.0.0.1:8000/api/v1/update-table/', {
+		const response = await axios.get(process.env.REACT_APP_SERVER_URL + '/api/v1/update-table/', {
 			headers: {
 				Authorization: `Token ${cookies.token}`,
 			},
@@ -200,7 +200,7 @@ export default function Admin() {
 
 	async function postUpdateTable(params) {
 		const response = await axios.post(
-			'http://127.0.0.1:8000/api/v1/update-table/',
+			process.env.REACT_APP_SERVER_URL + '/api/v1/update-table/',
 			{
 				series: params.series,
 				startingDateKey: params.startingDateKey,

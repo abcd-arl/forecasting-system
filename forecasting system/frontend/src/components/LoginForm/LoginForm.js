@@ -11,7 +11,7 @@ import Loading from '../Loading/Loading';
 import { useRef } from 'react';
 
 async function postLoginInfo(values) {
-	const response = await axios.post('http://127.0.0.1:8000/api/dj-rest-auth/login/', values);
+	const response = await axios.post(process.env.REACT_APP_SERVER_URL + '/api/dj-rest-auth/login/', values);
 	return response.data;
 }
 
