@@ -23,8 +23,9 @@ export default function Header() {
 					className="absolute top-3 p-1.5"
 					onClose={() => setAlertOpened(false)}
 				>
-					The ranges to search for the model parameters are shorten for this demo.
-					<span className="mr-3" />
+					<span className="mr-3 text-[0.6rem] md:text-sm ">
+						The ranges to search for the model parameters are shorten for this demo.
+					</span>
 				</Alert>
 			)}
 		</header>

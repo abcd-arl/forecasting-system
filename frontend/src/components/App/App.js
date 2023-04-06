@@ -19,11 +19,11 @@ function App() {
 
 	return (
 		<>
-			<div className="my-5 w-full">
-				<div className="w-[96%] mx-auto">
-					<div className="w-full max-w-[1280px] mx-auto">
+			<div className="w-full h-full my-5">
+				<div className="w-[96%] h-full mx-auto">
+					<div className="w-full h-full max-w-[1280px] mx-auto">
 						<Header />
-						<main className="min-h-[calc(100vh_-_350px)] md:min-h-[calc(100vh_-_320px)] min-[1095px]:min-h-[calc(100vh_-_180px)] relative flex justify-center items-center">
+						<main className="min-h-[calc(100vh_-_350px)] md:min-h-[calc(100vh_-_320px)] post-lg:min-h-[calc(100vh_-_280px)] relative flex justify-center items-center">
 							<div className="w-full">
 								<HomeContext.Provider
 									value={{ homeTableReducer, homeChartsState, isTableUpdated, setIsTableUpdated, homeModelSettings }}

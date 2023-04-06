@@ -30,9 +30,14 @@ module.exports = {
 			helvetica: 'Helvetica, Arial, sans-serif',
 			imperial: 'Imperial',
 		},
-		// screens: {
-		// 	'2lg': '1140px',
-		// },
+		screens: {
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+			'post-lg': '1140px',
+			xl: '1280px',
+			'2xl': '1536px',
+		},
 	},
 	plugins: [
 		plugin(function ({ matchUtilities, theme }) {
