@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<>
-			<div className="w-full h-full my-5">
+			<div className="w-full my-4">
 				<div className="w-[96%] h-full mx-auto">
 					<div className="w-full h-full max-w-[1280px] mx-auto">
 						<Header />
