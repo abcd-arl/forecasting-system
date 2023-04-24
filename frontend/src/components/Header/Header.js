@@ -8,7 +8,7 @@ export default function Header() {
 
 	return (
 		<header className="mb-10 flex flex-col justify-between items-center">
-			<Link to="/" className="mb-1 mt-7 h-fit w-full my-9 text-center text-[#5f5e5a] no-underline">
+			<Link to="/" className="mb-1 mt-3 h-fit w-full text-center text-[#5f5e5a] no-underline">
 				<h1 className="w-fit font-['Imperial'] text-[1.5rem] sm:text-[2.1rem] m-auto">
 					TIME SERIES FORECASTING OF HIV CASES IN THE PHILIPPINES
 				</h1>

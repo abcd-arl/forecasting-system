@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "13.114.35.155", "172.31.4.22", "ec2-18-182-29-108.ap-northeast-1.compute.amazonaws.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "18.181.188.202", "172.31.4.22", "ec2-18-181-188-202.ap-northeast-1.compute.amazonaws.com"]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-abcdarl-hivforecastingd-4p274ahpjtp.ws-us67.gitpod.io']
 
