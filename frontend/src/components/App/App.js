@@ -26,8 +26,8 @@ function App() {
 						<Header />
 						<main className="min-h-[calc(100vh_-_330px)] md:min-h-[calc(100vh_-_300px)] post-lg:min-h-[calc(100vh_-_260px)] relative flex justify-center items-center">
 							<div className="w-full">
-								<Error />
-								{/* <HomeContext.Provider
+								{/* <Error /> */}
+								<HomeContext.Provider
 									value={{ homeTableReducer, homeChartsState, isTableUpdated, setIsTableUpdated, homeModelSettings }}
 								>
 									<Routes>
@@ -73,7 +73,7 @@ function App() {
 											}
 										/>
 									</Routes>
-								</HomeContext.Provider> */}
+								</HomeContext.Provider>
 							</div>
 						</main>
 						<Footer />
